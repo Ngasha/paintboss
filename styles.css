@@ -1,0 +1,85 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image:/* linear-gradient(rgba(133, 101, 100, 0.736), rgba(255, 169, 10, 0.877)), */url("./img/paint.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+
+/*navbar*/
+.w3-whiti {
+    background-color: rgba(196, 226, 23, 0.925);
+}
+.containera {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+/*contact*/
+.w3-darki-grey{
+    background-color: #f9c1ba;
+}
+.test{
+    display: flex;
+    flex-direction: initial;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}
+.testimon{
+    background-color: lightgreen;
+    height: 40vh;
+    text-align: center;  
+}
+.testimon h3{
+    font-size: 28px;
+    margin-top: 0;
+}
+/*tteam
+.tteam{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}*/
+
+.containera::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+.containera img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.containera span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .containera {
+      text-align: center;
+  }
+  .containera img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
