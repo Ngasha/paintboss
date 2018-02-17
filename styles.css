@@ -43,7 +43,7 @@ body, html {
     background-color: lightgreen;
     height: 40vh;
     text-align: center;
-     
+    margin-bottom: 10px;
 }
 .testimon h3{
     font-size: 28px;
