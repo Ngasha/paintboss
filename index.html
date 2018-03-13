@@ -24,6 +24,7 @@ body, html {
     padding: 16px;
 }
 </style>
+
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -55,6 +56,35 @@ body, html {
   <!--<a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>-->
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
+<!-- AUTOMATIC SLIDESHOW-->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1/3</div>
+      <img src="./img/out.jpg" alt="out" style="width:100%">
+    <div class="text">exterior</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">1/3</div>
+        <img src="./img/out2.jpg" alt="out2" style="width:100%">
+    <div class="text">exterior</div>
+  </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">1/3</div>
+            <img src="./img/in.jpg" alt=in style="width:100%">
+        <div class="text">interior</div>
+      </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
@@ -300,6 +330,27 @@ body, html {
 </footer>
  
 <!-- Add Google Maps -->
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
 <script>
 function myMap()
 {
