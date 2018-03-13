@@ -18,7 +18,7 @@ body, html {
   }
   .card img{
       height:390px;
-      width: 250px;
+      width: 240px;
       border-radius: 50%;
       border: 2px solid #ac1444;
   }
@@ -31,7 +31,8 @@ body, html {
   }
   
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      background-color: 0 4px 8px 0 rgba(68, 68, 27, 0.795);
+    box-shadow: 0 4px 8px 0 rgba(110, 207, 45, 0.712);
   }
   
   .containeri {
