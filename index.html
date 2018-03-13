@@ -14,10 +14,11 @@ body, html {
     line-height: 1.8;
 }
 /* Full height image header */
-.mySlides{
+.bgimg{
     background-position: center;
     background-size: cover;
-    background:linear-gradient(rgba(170, 31, 96, 0.445), rgba(113, 11, 172, 0.63));
+    background-image:linear-gradient(rgba(170, 31, 96, 0.445), rgba(113, 11, 172, 0.63)),
+    url("./img/paint.jpg");
     min-height: 100%;
 }
 .w3-bar .w3-button {
@@ -60,7 +61,7 @@ body, html {
 <div class="mySlides fade">
     <div class="numbertext">1/3</div>
 
-        <img src="./img/in1.jpg" alt=in style="min-width:100%;">
+        <img src="./img/in1.jpg" alt=in style="width:100%;">
         <div class="text1">
             We are dedicated to quality <br>
             Beauty begins at home
@@ -110,7 +111,7 @@ body, html {
 
 
 <!-- Header with full-height image -->
-<!--<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+<!-- <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
     <span class="w3-jumbo w3-hide-small">We are dedicated to quality</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Give your walls a life</span><br>
@@ -371,7 +372,7 @@ body, html {
         }
         slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 3000); // Change image every 2 seconds
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
     }
     </script>
 <script>
