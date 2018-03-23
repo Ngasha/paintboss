@@ -22,6 +22,11 @@ body, html {
       border-radius: 50%;
       border: 2px solid #99254a;
   }
+
+  /*slide-show container*/
+  .slideshow-container{
+    float: right;
+  }
   
   @media screen and (max-width: 650px) {
     .column {
@@ -68,7 +73,7 @@ body, html {
 .bgimg-1 {
     background-position: center;
     background-size: cover;
-    background-image:/*linear-gradient(to bottom rgba(150, 54, 134, 0.308), rgba(255, 169, 10, 0.577)), */url("./img/paint.jpg");
+    background-image:linear-gradient(rgba(12, 9, 12, 0.726), rgba(22, 17, 8, 0.623)),url("./img/exterior2.jpg");
     min-height: 100%;
 }
 .w3-bar .w3-button {
