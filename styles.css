@@ -333,7 +333,7 @@ img {vertical-align: right;}
 
 /*interior*/
 .interior{
-  height:70vh;
+  min-height:70vh;
   width:100%;
   background-color: rgba(66, 62, 62, 0.877);
 }
@@ -354,7 +354,7 @@ img {vertical-align: right;}
 
 /*exteriou design*/
 .exterior{
-  height:70vh;
+  min-height:70vh;
   width:100%;
   background-color: rgba(105, 72, 72, 0.719);
 }
