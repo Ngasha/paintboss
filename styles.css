@@ -34,7 +34,15 @@ body, html {
       display: block;
     }
   }
-  
+  .phone,
+  .fade,
+  .fade1 img{
+    max-width: 75%;
+    justify-content: center;
+  }
+  .slideshow-container{
+    max-width: 75%;
+  }
   .card {
       background-color: 0 4px 8px 0 rgba(68, 68, 27, 0.795);
     box-shadow: 0 4px 8px 0 rgba(110, 207, 45, 0.712);
@@ -291,4 +299,68 @@ img {vertical-align: right;}
     text-align: center;
     bottom: -10px;
     right: -40px;
+}
+
+
+
+/*parallax*/
+.parallax{
+  background-image: url("./img/interior6.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: center;
+}
+
+/*parallax1*/
+.parallax1{
+  background-image: url("./img/interior1.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: center;
+}
+
+/*interior*/
+.interior{
+  height:70vh;
+  width:100%;
+  background-color: rgba(66, 62, 62, 0.877);
+}
+.interior{
+  text-align: center;
+}
+.interior1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.interior1 > div {
+  width: 390px;
+  height: 400px;
+  margin: auto;
+}
+
+/*exteriou design*/
+.exterior{
+  height:70vh;
+  width:100%;
+  background-color: rgba(105, 72, 72, 0.719);
+}
+.exterior{
+  text-align: center;
+}
+.exterior1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.exterior1 > div {
+  width: 390px;
+  height: 400px;
+  margin: auto;
 }
