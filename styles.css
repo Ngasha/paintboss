@@ -322,6 +322,14 @@ img {vertical-align: right;}
   background-repeat: no-repeat;
   background-size: center;
 }
+@media only screen and(max-device-width:1366px){
+  .parallax{
+    display: none;
+  }
+  .parallax1{
+    background-attachment: scroll;
+  }
+}
 
 /*interior*/
 .interior{
