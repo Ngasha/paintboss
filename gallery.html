@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<title>PaintBoss</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="scripts.js"></script>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+/*.bgimg{
+    background-position: center;
+    background-size: cover;
+    background-image:linear-gradient(rgba(170, 31, 96, 0.445), rgba(113, 11, 172, 0.63)),
+    url("./img/exterior2.jpg");
+    min-height: 100%;
+}*/
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">PaintBoss</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <!--<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>-->
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <!--<a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>-->
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!--slideshow-->
+
+<!-- Container for the image gallery -->
+<div class="containery" id="work">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlidesy">
+    <div class="numbertexty">1 / 6</div>
+      <img src="./img/interior1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlidesy">
+    <div class="numbertexty">2 / 6</div>
+      <img src="./img/interior2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlidesy">
+    <div class="numbertexty">3 / 6</div>
+      <img src="./img/interior3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlidesy">
+    <div class="numbertexty">4 / 6</div>
+      <img src="./img/interior4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlidesy">
+    <div class="numbertexty">5 / 6</div>
+      <img src="./img/exterior1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlidesy">
+    <div class="numbertexty">6 / 6</div>
+      <img src="./img/exterior2.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="./img/interior1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Interior Design">
+    </div>
+    <div class="column"> 
+      <img class="demo cursor" src="./img/interior2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Interior Design">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./img/interior3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Interior Design">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./img/interior4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Interior Design">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./img/exterior1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Exterior Design">
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="./img/exterior2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Exterior Design">
+    </div>
+  </div>
+</div>
+
+
+<script src="scripts.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
