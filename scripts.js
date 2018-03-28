@@ -86,7 +86,7 @@ mySidebar.style.display = "none";
 
 
 //slideshow gallery
-var slideIndexy = 1;
+var slideIndexy = 0;
 showSlidesy(slideIndexy);
 
 // Next/previous controls
