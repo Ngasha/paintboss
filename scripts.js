@@ -25,18 +25,20 @@ showSlide();
 function showSlide() {
     var i;
     var slides = document.getElementsByClassName("mySlida");
-    var dots = document.getElementsByClassName("doti");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
+    if (slides) {
+        var dots = document.getElementsByClassName("doti");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides.length > 1 ? slides[slideIndex-1].style.display = "block" : false;  
+        dots.length > 1 ? dots[slideIndex-1].className += " active" : false;
+        setTimeout(showSlide, 4000); // Change image every 2 seconds
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlide, 4000); // Change image every 2 seconds
 }
 //celing
 var slideIndex = 0;
@@ -54,8 +56,8 @@ function showSlidi() {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
+    slides.length > 1 ? slides[slideIndex-1].style.display = "block" : false;  
+    dots.length > 1 ? dots[slideIndex-1].className += " active" : false;
     setTimeout(showSlidi, 4000); // Change image every 2 seconds
 }
 // Modal Image Gallery
@@ -87,7 +89,7 @@ mySidebar.style.display = "none";
 
 //slideshow gallery
 var slideIndexy = 0;
-showSlidesy(slideIndexy);
+slideIndexy ? showSlidesy(slideIndexy) : false;
 
 // Next/previous controls
 var slideIndex = 1;
@@ -108,15 +110,22 @@ function showSlides(n) {
   var slides = document.getElementsByClassName("mySlidesy");
   var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+  if (slides && dots && captionText) {
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
+    }
+    for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides.length > 1 ?  slides[slideIndex-1].style.display = "block" : false;
+
+    if (dots.length > 1) {
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
 }
