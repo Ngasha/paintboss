@@ -68,7 +68,7 @@ body, html {
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #000;
+    background-color: mediumspringgreen;
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -114,7 +114,6 @@ body, html {
 }
 
 .testimon{
-    background-color: lightgreen;
     height: 40vh;
     text-align: center;
     margin-bottom: 10px;
@@ -305,12 +304,12 @@ img {vertical-align: right;}
 
 /*parallax*/
 .parallax{
-  background-image: url("./img/interior6.jpg");
-  height: 100%;
+  background-image: linear-gradient(rgba(15, 3, 9, 0.678), rgba(23, 2, 36, 0.712)),url("./img/paint.jpg");
+  height: 60%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: center;
+  background-size:cover;
 }
 
 /*parallax1*/
@@ -339,7 +338,13 @@ img {vertical-align: right;}
 }
 .interior{
   text-align: center;
+  font-family: sans-serif;
+  color: rgb(182, 228, 15);
+  font-weight: 600;
+  font-size: 23px;
+  font-style: oblique;
 }
+
 .interior1{
   display: flex;
   flex-wrap: wrap;
@@ -347,8 +352,8 @@ img {vertical-align: right;}
   justify-content: space-around;
 }
 .interior1 > div {
-  width: 390px;
-  height: 400px;
+  width: 340px;
+  height: 265px;
   margin: auto;
 }
 
@@ -360,6 +365,11 @@ img {vertical-align: right;}
 }
 .exterior{
   text-align: center;
+  font-family: cursive;
+  color: springgreen;
+  font-weight: 600;
+  font-size: 23px;
+  font-style: oblique;
 }
 .exterior1{
   display: flex;
@@ -368,11 +378,14 @@ img {vertical-align: right;}
   justify-content: space-around;
 }
 .exterior1 > div {
-  width: 390px;
-  height: 400px;
+  width: 340px;
+  height: 265px;
   margin: auto;
 }
 .w3-padding-64e{
+  padding: 0;
+}
+.w3-padding-64{
   padding: 0;
 }
 /*contact*/
@@ -390,6 +403,7 @@ img {vertical-align: right;}
   text-align: center;
   color: #f9c1ba;
   margin-top: 0;
+  padding-right: 12px;
 }
 h1,h2{
   margin: 0;
