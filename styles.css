@@ -426,6 +426,9 @@ h1,h2{
 .mySlidesy {
   display: none;
 }
+/* .mySlidesy:first-of-type{
+  display: block !important;
+} */
 
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {

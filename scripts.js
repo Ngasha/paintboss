@@ -1,10 +1,26 @@
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+} else {
+    mySidebar.style.display = 'block';
+}
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+mySidebar.style.display = "none";
+}
+
 //interior
 var slideIndex = 0;
 showSlides();
 
 function showSlides() {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
+    var slides = document.getElementsByClassName("mySlidesy");
     var dots = document.getElementsByClassName("dot");
     for (i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";  
@@ -69,21 +85,6 @@ captionText.innerHTML = element.alt;
 }
 
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-} else {
-    mySidebar.style.display = 'block';
-}
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-mySidebar.style.display = "none";
-}
 
 
 
