@@ -2,6 +2,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
     height: 100%;
     line-height: 1.8;
+    font-family: 'Arapey', serif;
 }
 
 .column {
@@ -94,11 +95,9 @@ body, html {
     background-color: rgba(196, 226, 23, 0.925);
 }
 .containera {
-  border: 2px solid rgb(168, 142, 142);
-  background-color: rgb(202, 226, 218);
-  border-radius: 5px;
-  padding: 8px;
-  margin-top: 5px;
+  box-shadow: 0 23px 40px 0 rgba(164,164,164,0.3);
+  padding: 5px;
+  margin-top: 20px;
 }
 
 /*contact*/
@@ -109,6 +108,7 @@ body, html {
     display: flex;
     flex-direction: initial;
     flex-wrap: wrap;
+    font-family: 'Arapey', serif;
     margin: auto;
     justify-content: space-around;
 }
@@ -334,15 +334,15 @@ img {vertical-align: right;}
 .interior{
   min-height:70vh;
   width:100%;
-  background-color: rgba(66, 62, 62, 0.877);
+  background-color: transparent;
 }
 .interior{
   text-align: center;
   font-family: sans-serif;
-  color: rgb(182, 228, 15);
+  color: #111;
   font-weight: 600;
   font-size: 23px;
-  font-style: oblique;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .interior1{
@@ -361,15 +361,14 @@ img {vertical-align: right;}
 .exterior{
   min-height:70vh;
   width:100%;
-  background-color: rgba(105, 72, 72, 0.719);
+  background-color: #2b3137;
 }
 .exterior{
   text-align: center;
   font-family: cursive;
-  color: springgreen;
+  color: ghostwhite;
   font-weight: 600;
-  font-size: 23px;
-  font-style: oblique;
+  font-size: 24px;
 }
 .exterior1{
   display: flex;
@@ -397,11 +396,11 @@ img {vertical-align: right;}
 .team{
   min-height: 85vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.932);
+  background-color: #2b3137;
 }
 .team{
   text-align: center;
-  color: #f9c1ba;
+  color: whitesmoke;
   margin-top: 0;
   padding-right: 12px;
 }
@@ -518,3 +517,15 @@ h1,h2{
 }
 
 
+/* Style all font awesome icons */
+.fa {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
